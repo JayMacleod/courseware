@@ -1,5 +1,12 @@
 # Software as a Service (SaaS)
 
+<!--TOC_START-->
+## Contents
+- [Description](#description)
+	- [Business case](#business-case)
+	- [Advantages](#advantages)
+
+<!--TOC_END-->
 # Description
 
 **SaaS** allows everyone to connect to the cloud based application over the internet. 
@@ -39,4 +46,3 @@ More advanced application for bussiness would include services for **C**ustomer 
 Business case is more likely to be a subscription based service, or based on some level of usage.
 
 ### Advantages
-

@@ -46,3 +46,15 @@ More advanced application for bussiness would include services for **C**ustomer 
 Business case is more likely to be a subscription based service, or based on some level of usage.
 
 ### Advantages
+
+Here are some of the advantages of SaaS:
+
+- no need to purchase or maintain:
+    - _hardware_
+    - _software_
+    - _middleware_
+    - applications like _ERP_ or _CRM_ become available as the price drops due to not needing the previously mentioned points
+- due to the automatic scaling based on your usage you spend for what you use
+- application don't always need installing, majority can be accessed through a web browser
+- mobile phone support
+- no data loss if personal machine fails as everything is kept in the cloud and made readily available over the internet 

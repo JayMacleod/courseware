@@ -21,9 +21,8 @@ Everything from infrastructure to data is stored in the providers data centre.
 
 Service provider is responsible for managing everything from availability, hardware, software, security, data etc.
 
-------------------------------------------------------------------------------------------------------------------------
-**INSERT PICTURE HERE**
-------------------------------------------------------------------------------------------------------------------------
+[![SaaS](https://imgur.com/AeHrcnw.jpg)]
+
 
 ### Business case
 

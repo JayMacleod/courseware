@@ -56,4 +56,4 @@ Here are some of the advantages of SaaS:
 - due to the automatic scaling based on your usage you spend for what you use
 - application don't always need installing, majority can be accessed through a web browser
 - mobile phone support
-- no data loss if personal machine fails as everything is kept in the cloud and made readily available over the internet 
+- no data loss if personal machine fails as everything is kept in the cloud and made readily available over the internet

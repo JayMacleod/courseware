@@ -5,6 +5,7 @@
 	- [Description](#description)
 	- [Business scenarios](#business-scenarios)
 	- [Advantages](#advantages)
+	- [Tasks](#tasks)
 
 <!--TOC_END-->
 ### Description

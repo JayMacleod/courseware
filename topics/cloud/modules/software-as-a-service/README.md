@@ -23,7 +23,6 @@ Service provider is responsible for managing everything from availability, hardw
 
 ![SaaS](https://imgur.com/AeHrcnw.jpg)
 
-
 ### Business case
 
 One of the best examples is an email application you have most likely already used or are using. 

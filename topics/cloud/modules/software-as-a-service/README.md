@@ -5,6 +5,7 @@
 - [Description](#description)
 	- [Business case](#business-case)
 	- [Advantages](#advantages)
+	- [Tasks](#tasks)
 
 <!--TOC_END-->
 # Description
@@ -58,4 +59,3 @@ Here are some of the advantages of SaaS:
 - no data loss if personal machine fails as everything is kept in the cloud and made readily available over the internet
 
 ### Tasks
-

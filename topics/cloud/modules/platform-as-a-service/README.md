@@ -30,9 +30,7 @@ With *PaaS* you would avoid the hassle of paying for and managing things like:
 
 The main responsibilities that are left in the users hands are the application and services that you're developing while everything else is the responsibility of the cloud provider. 
 
-------------------------------------------------------------------------------------------------------------------------
-**INSERT PICTURE HERE**
-------------------------------------------------------------------------------------------------------------------------
+![PaaS](https://imgur.com/7cYkMDe.jpg)
 
 ### Business scenarios
 

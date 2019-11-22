@@ -57,3 +57,6 @@ Here are some of the advantages of SaaS:
 - application don't always need installing, majority can be accessed through a web browser
 - mobile phone support
 - no data loss if personal machine fails as everything is kept in the cloud and made readily available over the internet
+
+### Tasks
+

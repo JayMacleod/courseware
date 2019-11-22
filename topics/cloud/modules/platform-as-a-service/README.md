@@ -52,3 +52,23 @@ As **PaaS** is build on top of _IaaS_ it offers all of the latter advantages wit
 - environment and all the capabilities are there for a complete application lifecycle: build, test, deploy
 
 ### Tasks
+
+Try answering the following questions:
+
+<details>
+
+<summary><b>PaaS is aimed at what job role?</b></summary>
+
+Developers
+
+</details>
+
+<details>
+
+<summary><b>What are your responsibilities when using PaaS?</b></summary>
+
+- **Applications**
+- **Data**
+
+</details>
+

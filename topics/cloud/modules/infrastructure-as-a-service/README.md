@@ -38,6 +38,8 @@ In the following picture we can see the responsibilities of the vendor and clien
  Premises hosting.
  
 ![SaaS](https://imgur.com/GV9gjSA.jpg)
+
+One thing the picture doesn't include is the actual physical premises.
  
 ### Business scenarios
 
@@ -73,3 +75,30 @@ Typically in order to achieve high availability, disaster recovery and business 
 - **Stability, reliability and supportability** can be achieved with the right SLA with the provider. 
 Things like: software updates, hardware, troubleshooting or equipment problems could be taken care of by the provider freeing up the time to focus on the business. 
 - **Security** through the service provider can be better in most cases than what you may be able to achieve in house, it will depend on the SLA you choose.
+
+### Tasks
+
+Try answering the following questions:
+
+<details>
+
+<summary><b>What is the cloud providers responsibilities?</b></summary>
+
+- **Virtualization**
+- **Networking**
+- **Storage**
+- **Servers**
+
+</details>
+
+<details>
+
+<summary><b>What are your responsibilities?</b></summary>
+
+- **Application**
+- **Data**
+- **Runtime**
+- **Middleware**
+- **OS**
+
+</details>

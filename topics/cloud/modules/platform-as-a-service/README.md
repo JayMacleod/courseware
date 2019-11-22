@@ -5,6 +5,7 @@
 	- [Description](#description)
 	- [Business scenarios](#business-scenarios)
 	- [Advantages](#advantages)
+	- [Tasks](#tasks)
 
 <!--TOC_END-->
 ### Description
@@ -51,4 +52,3 @@ As **PaaS** is build on top of _IaaS_ it offers all of the latter advantages wit
 - environment and all the capabilities are there for a complete application lifecycle: build, test, deploy
 
 ### Tasks
-

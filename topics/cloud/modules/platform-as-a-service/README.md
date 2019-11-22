@@ -49,3 +49,6 @@ As **PaaS** is build on top of _IaaS_ it offers all of the latter advantages wit
 - sophisticated tools for development, business intelligence and analytics through the pay-as-you go model allow even the smallest of companies to take advantage of the tools and save time
 - remote team work is available as all the resources are reachable over the internet
 - environment and all the capabilities are there for a complete application lifecycle: build, test, deploy
+
+### Tasks
+

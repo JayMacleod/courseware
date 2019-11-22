@@ -59,3 +59,20 @@ Here are some of the advantages of SaaS:
 
 ### Tasks
 
+Try to answer the following questions:
+
+<details>
+
+<summary><b>Is SaaS mostly a subscription based service?</b></summary>
+
+**Yes**
+
+</details>
+
+<details>
+
+<summary><b>Are you in control of the infrastructure or where the data is stored when using SaaS?</b></summary>
+
+**No**
+
+</details>

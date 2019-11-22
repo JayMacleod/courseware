@@ -37,27 +37,31 @@
 ## Overview
 Nearly all networks are based on the **Internet Protocol Suite (TCP/IP)**, the set of protocols that allow for a device to gain access to the Internet.
 
-Contained within this suite is the **Transmission Control Protocol**, which facilitates connections between nodes within a network, and the **Internet Protocol**, which has the task of delivering data from a source node to a destination node.
+Contained within this suite is the **Transmission Control Protocol (TCP)**, which facilitates connections between nodes within a network, and the **Internet Protocol (IP)**, which has the task of delivering data from a source node to a destination node.
 
-The biggest difference between the two is that while TCP is a connection protocol - in charge of ensuring that connections are made before data is transferred - IP is connectionless, and does concern itself with whether information it attempts to deliver is received or not.
+TCP is a connection protocol: it is in charge of ensuring that a connection has been made before data is transferred.
 
-IP also encapsulates data into **datagrams**. Irrespective of the content of the data that is being transmitted, IP splits it into one or more datagrams, each containing a **header** and a **payload**:
+IP is connectionless: it does not care whether the information it attempts to deliver is received or not.
+
+IP also *encapsulates* the data which it transmits, splitting it into several chunks, or **datagrams**, each containing a **header** and a **payload**:
 
 |Type|Information| 
 |-|-|
-|Datagram|basic transfer unit - contains header; payload|
-|Header|contains source IP address; destination IP address; routing metadata|
-|Payload|content of data to be transported|
+|**Datagram**|basic transfer unit - contains header; payload|
+|**Header**|contains source IP address; destination IP address; routing metadata|
+|**Payload**|content of data to be transported|
 
-IP routes these datagrams from a source host interface to a destination host interface, across one or more IP networks.
+IP can then route these datagrams from a 'source' node to a 'destination' node.
 
-Essentially, if TCP is the postal service, IP is the postman. TCP makes sure that the connections are in place for deliveries to take place, but all IP does is delivers stuff, and doesn't care if that stuff ever gets where it's supposed to be or not.
+Essentially, if TCP is the postal service, IP is the postman.
+
+TCP makes sure that the connections are in place for deliveries to take place, but all IP does is delivers stuff, and doesn't care if that stuff ever gets where it's supposed to be or not.
 
 ## Usage
 The Internet Protocol requires five specific things in order to work:
 1. An **IP address**, assigned to whichever device is attempting to transfer information over the Internet
-2. **ARP**, a mechanism for mapping hardware-specific MAC addresses to networked IP addresses
-3. A clearly-defined local network (the **`localhost`**)
+2. The **Address Resolution Protocool (ARP)**, a mechanism for mapping a physical MAC address (literally burned into the hardware) to a networked, non-physical IP address
+3. A local network (the **`localhost`**), with **ports** to plug programs (or **services**) into
 4. A **routing** mechanism for moving data around
 5. A **network gateway**, which routes data from the local **internal** network to **external** networks
 
@@ -184,7 +188,7 @@ If **Node 1** tries to find the MAC address associated with the IPv4 address `10
 Once **Node 2** receives this request, it will send an **ARP response** if the Target IP matches its IP address:
 
 ```text
- ┌────────[Node 1]─────────┐											┌────────[Node 2]─────────┐
+ ┌────────[Node 1]─────────┐									  		┌────────[Node 2]─────────┐
  │ MAC: 12:6e:eb:de:b3:ed  │────────────<───────────────────<───────────│ MAC: 12:6f:56:c0:c4:c1  │
  │ IP: 10.12.2.73          │	   Source MAC: 12:6f:56:c0:c4:c1		│ IP: 10.12.2.1           │
  └─────────────────────────┘	   Source IP:  10.12.2.1	   	   		└─────────────────────────┘
@@ -193,17 +197,53 @@ Once **Node 2** receives this request, it will send an **ARP response** if the T
 ```
 
 ### 3. `localhost`
-The `127.x.x.x` category of addresses is reserved for use by internal systems within a host node - when referring to a `localhost`, we mean *this computer*.
+Let's say that we want to access network services that are running on a host device. 
 
-It is used to access network services that are running on the host computer via the **local loopback mechanism**, a network interface which bypasses the networking hardware of that computer entirely.
+To do this, we have to use the **local loopback mechanism**, a network interface which bypasses the networking hardware of that device entirely.
 
-For instance, if we run a program which can be hosted on the Internet directly from a computer, such as a Java application which connects to the Internet, we will find that this program is hosted at `localhost:8080`.
+The cool thing about the local loopback mechanism is that it can run a service that's meant to be on a network - either the local network or the Internet - without having any networking hardware installed on the device at all.
 
-In this instance, `8080` refers to the specific **port** which a program is using to run. We discuss ports in [this module]().
+There is a special category of IPv4 addresses reserved so that we can do this: `127.x.x.x`.
 
-Because the local loopback mechanism can be used to run a network service on a host without requiring any physical network interface, it can even run on a machine which is not connected to any networks at all.
+They can only be used by internal systems within a host device - in other words, when using these addresses, the host device acts as both the *source* of data and the *receiver* of data. 
 
-The name `localhost` normally resolves to the IPv4 loopback address `127.0.0.1`, and to the IPv6 loopback address `::1`.
+`localhost` is one of these **loopback address** - so any connection it tries to make bypasses its networking devices entirely, and *loops* the connection back to its own internal systems.
+
+`localhost` is hosted at the loopback address `127.0.0.1` (or `::1` in IPv6).
+
+So, when we use the `localhost`, what we're basically asking the device to do is to point any data it sends to *itself*.
+
+As such, the `localhost` is a testing area. 
+
+It looks and feel as though you're hosting something (like a service or a website) on the Internet properly - but all that's really happening is that your device is looping back to itself whenever it tries to connect to the thing you're testing.
+
+This is great for when we're developing stuff, because it allows us to test our services without ever exposing them to a) the rest of the network we're on, and b) the Internet.
+
+#### Ports
+Ports allow us to speak to a specific *service* - a small, self-contained program, which can be used either on its own or in combination with other services.
+
+We 'plug in' the service to the port we want it to use (though for larger programs, this is usually done automaticaly).
+
+The `localhost`, as part of testing, makes exclusive use of these ports.
+
+Because `localhost` uses TCP/IP, any port that it tries to speak to is a **TCP port**.
+
+For instance, if we want run a program which can be hosted on the Internet directly from a computer, such as a Java application, we might find that this program is hosted here:
+```text
+localhost:8080
+```
+
+In this instance, the `:8080` refers to the specific **port** which a program is using to run.
+
+Since the `localhost` is just a name for a specific IP address, our Java application really runs here:
+```text
+127.0.0.1:8080
+```
+
+If we were to host this application outside of our `localhost`, the IP address would change, but the port would remain the same:
+```text
+34.231.45.89:8080
+```
 
 ### 4. Routing
 Routing refers to the way in which information is redirected through networks.
@@ -211,21 +251,33 @@ Routing refers to the way in which information is redirected through networks.
 As we are now familiar with IP addresses, we can use IPv4 to demonstrate how this works.
 
 #### Network Classes
-The first IPv4 addresses were limited to 254 unique allocations. As these depleted, IPv4 was further subdivided into a **network class** structure.
+The first IPv4 addresses were limited to 254 unique allocations. As these depleted, IPv4 was further subdivided into a **network class** structure by 1981.
 
-Depending on the network class, these sub-networks, or **subnets** could take different forms.
+Classful network design allowed for a larger number of individual networks.
+
+The first three bits of an IP address determined its class.
+
+The size of the network ID was based on the class of the IP address.
+
+Each class used more octets for the network ID, making the host ID smaller and reducing the number of possible host addresses:
 
 |Class|Network ID|Host ID|Networks|Addresses|
 |-|-|-|-|-|-|-|
-|A|`a`|`b.c.d`|2&#8311;|2&sup2;&#8308;|
-|B|`a.b`|`c.d`|2&sup1;&#8308;|2&sup1;&#8310;|
-|C|`a.b.c`|`d`|2&sup2;&sup1;|2&#8312;|
-|D|`a.b.c.d`|`(experimental)`|2&sup2;&sup3;|2&#8313;|
-
-For instance, the class B IPv4 address `10.0.0.0` would allow for 65,536 available hosts.
+|**A**|`a`|`b.c.d`|128|16,777,216|
+|**B**|`a.b`|`c.d`|16,384|65,536|
+|**C**|`a.b.c`|`d`|2,097,152|256|
+|**D**|`a.b.c.d`|`(experimental)`|2,110,199|512|   
 
 #### Subnets
-Due to performance limitations of broadcast domains, networks are split into sub-networks: **subnets**.​
+Network classes became mostly obsolete as IPv4 depletion rapidly increased with the dotcom bubble of the early-90s, and by 1993 they had phased out entirely.
+
+The primary reason for this was that using a traditional class format to subnet usually resulted in networks having either a too-broad or a too-narrow broadcast domain.
+
+For instance, a network that might have needed hundreds of IP addresses for its nodes (like a WAN across a city's municipal offices) could be assigned a class which was too limited, making them run out of addresses very quickly.
+
+Meanwhile, a network that might not have needed more than a few devices connected at any given time (like a LAN in a small office) could be given swathes of IP addresses it didn't need.
+
+Subnetting needed to change to be more manageable, and that signalled a move away from the class system.
 
 To facilitate this, the split in IPv4 addresses between the network prefix and the host identifier are utilised, but an extra section of bits is added for clarity: the **subnet identifier**.
 
@@ -237,40 +289,73 @@ Let's consider the following address:
 In this case, how can we know which section of bits is the network prefix, and which section refers to the host?
 
 #### CIDR
-Network classes became mostly obsolete as IPv4 depletion rapidly increased with the dotcom bubble of the late-90s, and it was eventually subsumed and replaced by **Classless Inter-Domain Routing (CIDR)**.
+Classful network architecture was replaced by **Classless Inter-Domain Routing (CIDR)** in 1993.
+
+CIDR allows for the dynamic assignment of several IP addresses to a network through a variety of subnets
+
+Instead of the four classes we looked at earlier, there are now 32 different categories to choose from in order to fine-tune the scope of a particular network's broadcast domain.
 
 The section of bits after the address we looked at earlier - the `/24` - is the **subnet identifier**.
 
-The subnet identifier corresponds with a specific 32-bit **subnet mask**.
+The subnet ID then corresponds with a specific 32-bit **subnet mask**.
 
-CIDR uses this to identify the sub-network, within a domain, that a particular node is on:
+The subnet ID lets us know how much of the IP address is the network ID - here, it's the first `/24` bits, or 3 octets.
+
+If we look at the IP address as binary, we can count these 24 bits:
+```text
+11000000.10101000.01100100    .00001110     /24
+└───────────┬───────────┘     └───┬───┘     └┬┘
+        network ID             host ID   subnet ID
+```
+
+If we convert from binary to octets, we can count the 3 octets:
+```text
+192.168.100       .14         /24
+└────┬────┘       └┬┘         └┬┘
+network ID      host ID    subnet ID
+```
+As the subnet ID is `/24`, the network ID is the first 3 octets; `192.168.100`, and doesn't change - it is *static*.
+
+The host ID - the specific 'door number' of the node we're looking at - is `14`, and can change depending on the device we're looking at - it is *variable*.
+
+Therefore, `192.168.100.14` is one of the 254 nodes within the `192.168.100` subnet.
+
+CIDR uses these things to identify the sub-network, within a domain, that a particular node is on:
 
 ```text
 ┌──────┬─────────────┐ ┌──────┬─────────────┐ ┌──────┬───────────────┐ ┌──────┬─────────────────┐
-│  ID  │ Subnet Mask │ │  ID  │ Subnet Mask │ │  ID  │ Subnet Mask   │ │  ID  │   Subnet Mask   │
+│  ID  │ Subnet Mask │ │  ID  │ Subnet Mask │ │  ID  │  Subnet Mask  │ │  ID  │   Subnet Mask   │
 ├──────┼─────────────┤ ├──────┼─────────────┤ ├──────┼───────────────┤ ├──────┼─────────────────┤
-│ /1   │ 128.0.0.0   │ │ /9   │ 255.128.0.0 │ │ /17  │ 255.255.128.0 │ │ /25  │ 255.255.255.128 │
-│ /2   │ 192.0.0.0   │ │ /10  │ 255.192.0.0 │ │ /18  │ 255.255.192.0 │ │ /26  │ 255.255.255.192 │
-│ /3   │ 224.0.0.0   │ │ /11  │ 255.224.0.0 │ │ /19  │ 255.255.224.0 │ │ /27  │ 255.255.255.224 │
-│ /4   │ 240.0.0.0   │ │ /12  │ 255.240.0.0 │ │ /20  │ 255.255.240.0 │ │ /28  │ 255.255.255.240 │
-│ /5   │ 248.0.0.0   │ │ /13  │ 255.248.0.0 │ │ /21  │ 255.255.248.0 │ │ /29  │ 255.255.255.248 │
-│ /6   │ 252.0.0.0   │ │ /14  │ 255.252.0.0 │ │ /22  │ 255.255.252.0 │ │ /30  │ 255.255.255.252 │
-│ /7   │ 254.0.0.0   │ │ /15  │ 255.254.0.0 │ │ /23  │ 255.255.254.0 │ │ /31  │ 255.255.255.254 │
-│ /8   │ 255.0.0.0   │ │ /16  │ 255.255.0.0 │ │ /24  │ 255.255.255.0 │ │ /32  │ 255.255.255.255 │
+│ /1   │  128.0.0.0  │ │ /9   │ 255.128.0.0 │ │ /17  │ 255.255.128.0 │ │ /25  │ 255.255.255.128 │
+│ /2   │  192.0.0.0  │ │ /10  │ 255.192.0.0 │ │ /18  │ 255.255.192.0 │ │ /26  │ 255.255.255.192 │
+│ /3   │  224.0.0.0  │ │ /11  │ 255.224.0.0 │ │ /19  │ 255.255.224.0 │ │ /27  │ 255.255.255.224 │
+│ /4   │  240.0.0.0  │ │ /12  │ 255.240.0.0 │ │ /20  │ 255.255.240.0 │ │ /28  │ 255.255.255.240 │
+│ /5   │  248.0.0.0  │ │ /13  │ 255.248.0.0 │ │ /21  │ 255.255.248.0 │ │ /29  │ 255.255.255.248 │
+│ /6   │  252.0.0.0  │ │ /14  │ 255.252.0.0 │ │ /22  │ 255.255.252.0 │ │ /30  │ 255.255.255.252 │
+│ /7   │  254.0.0.0  │ │ /15  │ 255.254.0.0 │ │ /23  │ 255.255.254.0 │ │ /31  │ 255.255.255.254 │
+│ /8   │  255.0.0.0  │ │ /16  │ 255.255.0.0 │ │ /24  │ 255.255.255.0 │ │ /32  │ 255.255.255.255 │
 └──────┴─────────────┘ └──────┴─────────────┘ └──────┴───────────────┘ └──────┴─────────────────┘
 ```
+We can see, here, that our subnet mask is `255.255.255.0`.
 
-Depending on the network, certain sections of the mask, just like the IP address it corresponds to, are either static or variable. The static sections of the subnet mask correspond to the static sections of the IP address.
+The subnet mask also contains *static* and *variable* octets, which correspond to the static and variable octets in our IPv4 address.
 
-Let's break this down using the address from earlier:
+In this case, since `192.168.100` in our IPv4 is static, so is `255.255.255` in our subnet mask.
+
+And, just like `14` is variable in our IPv4 address, so is `0` in the subnet mask.
+
+Therefore, there must be 254 different addresses within our network domain which a connected device can be assigned to:
+
 ```text
-Address:        192.168.100.14/24
-IPv4:           192.168.100.14
-Subnet mask:    255.255.255.0
-Network prefix: 192.168.100.0
+IPv4 address:       192.168.100.14
+Network ID:         192.168.100.0
+Host ID:            14
+Subnet ID:          /24
+Subnet mask:        255.255.255.0
+Available hosts:    254
 ```
 
-By reconciling the static sections of the IPv4 with the subnet mask, we can determine the network which the address is connected to - which in this case is the network containing the 255 IPv4 addresses from `192.168.100.0` to `192.168.100.255`.
+Our network contains every available address from `192.168.100.1` to `192.168.100.254`.
 
 ### 5. Gateways
 A **network gateway** is a way for a private network to access public networks.
@@ -293,7 +378,7 @@ If several nodes on a private network are connecting to a public network at the 
 Let's say we have three nodes, all in the same network, looking to access the Internet:
 
 ```text
-                   Local Network                                    
+                  Local Network                                    
 			Private IPv4: 192.168.X.X                                    Internet
 ┌───────────────────────┴────────────────────────────┐│┌─────────────────────┴────────────────────┐
                                                       │
@@ -309,11 +394,47 @@ Let's say we have three nodes, all in the same network, looking to access the In
                                                       │
 ```
 
-The nodes are all contained within a local network with a **private IP** of `192.168.X.X`.
+The nodes are all contained within a local network with a network ID of `192.168`.
+
+Each of them have a **private IP** within this network of `192.168.X.X`.
 
 The router redirects data from all nodes in the network to its **default gateway** of `192.168.1.1`.
 
 NAT translates the information to a **public IP** through the default gateway, allowing the data to access any external IP address.
+
+#### DNS
+Once a device is connected to the Internet, the user will, most likely, type in some URL to visit:
+```text
+https://example.com/
+```
+
+For the purposes of this tutorial, this is the website's **host name**.
+
+The **Domain Name System (DNS)** is used to convert a device's host name into an IP address which another device can understand.
+
+For example, if a device needs to communicate with `example.com`, it will need the IP address for `example.com`. (It doesn't matter whether it's IPv4 or IPv6 in this case.)
+
+It is the job of DNS to convert the host name to the IP address of the web server.
+
+DNS is, essentially, a massive directory of web addresses - it converts a website's name that people know to a number that the Internet actually uses.
+
+The command `ping` allows us to see DNS in action:
+```text
+C:\WINDOWS\system32>ping example.com
+
+Pinging example.com [93.184.216.34] with 32 bytes of data:
+Reply from 93.184.216.34: bytes=32 time=76ms TTL=51
+Reply from 93.184.216.34: bytes=32 time=79ms TTL=51
+Reply from 93.184.216.34: bytes=32 time=76ms TTL=51
+Reply from 93.184.216.34: bytes=32 time=80ms TTL=51
+
+Ping statistics for 93.184.216.34:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 76ms, Maximum = 80ms, Average = 77ms
+```
+
+We can see the IP address (IPv4 in this case) for `example.com` is `93.184.216.34`.
 
 ## Changing IP address
 **IP-based geolocation** is the mapping of an issued IP address to the location in which the server that a particular node is connected to. 

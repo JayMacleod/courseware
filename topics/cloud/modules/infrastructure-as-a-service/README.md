@@ -37,9 +37,7 @@ There is no possibility to have access to the physical resources.
 In the following picture we can see the responsibilities of the vendor and client when comparing IaaS against On
  Premises hosting.
  
-------------------------------------------------------------------------------------------------------------------------
-**INSERT PICTURE HERE**
-------------------------------------------------------------------------------------------------------------------------
+![SaaS](https://imgur.com/GV9gjSA.jpg)
  
 ### Business scenarios
 

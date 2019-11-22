@@ -7,10 +7,34 @@
             "name": "Iptables"
         },
         {
+            "path": "./topics/wireshark",
+            "readme": "./topics/wireshark/README.md",
+            "overview": "Wireshark is a free and open-source packet analyzer.",
+            "name": "Wireshark"
+        },
+        {
             "path": "./topics/markdown",
             "readme": "./topics/markdown/README.md",
             "overview": "Markdown is a way to write content for the web. It's written in what people call 'plaintext'; this is just the regular alphabet, with a few symbols (such as `*` and `#`).",
             "name": "Markdown"
+        },
+        {
+            "path": "./topics/aws",
+            "readme": "./topics/aws/README.md",
+            "overview": "Amazon Web Services (AWS) is the world\u2019s most comprehensive and broadly adopted cloud platform, offering over 165 fully featured services from data centers globally. Millions of customers \u2014including the fastest-growing startups, largest enterprises, and leading government agencies\u2014trust AWS to power their infrastructure, become more agile, and lower costs.",
+            "name": "Amazon Web Services (AWS)"
+        },
+        {
+            "path": "./topics/powershell",
+            "readme": "./topics/powershell/README.md",
+            "overview": "PowerShell is a task-based command-line shell and scripting language built on .NET.",
+            "name": "PowerShell"
+        },
+        {
+            "path": "./topics/networking",
+            "readme": "./topics/networking/README.md",
+            "overview": "A computer network is a digital telecommunications network which allows nodes to share resources.",
+            "name": "Networking"
         },
         {
             "path": "./topics/tracert",
@@ -31,40 +55,10 @@
             "name": "Jenkins"
         },
         {
-            "path": "./topics/traceroute",
-            "readme": "./topics/traceroute/README.md",
-            "overview": "In computing, `traceroute` and `tracert` are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network.",
-            "name": "Traceroute"
-        },
-        {
-            "path": "./topics/git",
-            "readme": "./topics/git/README.md",
-            "overview": "Git is a distributed version-control system for tracking changes in source code during software development.",
-            "name": "Git"
-        },
-        {
             "path": "./topics/nginx",
             "readme": "./topics/nginx/README.md",
             "overview": "Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.",
             "name": "NGINX"
-        },
-        {
-            "path": "./topics/aws",
-            "readme": "./topics/aws/README.md",
-            "overview": "Amazon Web Services (AWS) is the world\u2019s most comprehensive and broadly adopted cloud platform, offering over 165 fully featured services from data centers globally. Millions of customers \u2014including the fastest-growing startups, largest enterprises, and leading government agencies\u2014trust AWS to power their infrastructure, become more agile, and lower costs.",
-            "name": "Amazon Web Services (AWS)"
-        },
-        {
-            "path": "./topics/cloud",
-            "readme": "./topics/cloud/README.md",
-            "overview": "",
-            "name": "Common Cloud Concepts"
-        },
-        {
-            "path": "./topics/wireshark",
-            "readme": "./topics/wireshark/README.md",
-            "overview": "Wireshark is a free and open-source packet analyzer.",
-            "name": "Wireshark"
         },
         {
             "path": "./topics/linux",
@@ -79,10 +73,10 @@
             "name": "Netstat"
         },
         {
-            "path": "./topics/networking",
-            "readme": "./topics/networking/README.md",
-            "overview": "A computer network is a digital telecommunications network which allows nodes to share resources.",
-            "name": "Networking"
+            "path": "./topics/traceroute",
+            "readme": "./topics/traceroute/README.md",
+            "overview": "In computing, `traceroute` and `tracert` are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network.",
+            "name": "Traceroute"
         },
         {
             "path": "./topics/netcat",
@@ -91,10 +85,16 @@
             "name": "netcat"
         },
         {
-            "path": "./topics/powershell",
-            "readme": "./topics/powershell/README.md",
-            "overview": "PowerShell is a task-based command-line shell and scripting language built on .NET.",
-            "name": "PowerShell"
+            "path": "./topics/git",
+            "readme": "./topics/git/README.md",
+            "overview": "Git is a distributed version-control system for tracking changes in source code during software development.",
+            "name": "Git"
+        },
+        {
+            "path": "./topics/cloud",
+            "readme": "./topics/cloud/README.md",
+            "overview": "",
+            "name": "Common Cloud Concepts"
         }
     ],
     "modules": [
@@ -104,199 +104,6 @@
             "readme": "./topics/iptables/modules/introduction/README.md",
             "overview": "Iptables is a command line utility for configuring Linux kernel firewall.",
             "name": "Introduction"
-        },
-        {
-            "path": "./topics/markdown/modules/advanced",
-            "readme": "./topics/markdown/modules/advanced/README.md",
-            "overview": "This topic will go over some of the more advanced Markdown syntax and formatting. There's lots you can do with Markdown, so experiment beyond this brief introduction to it!",
-            "name": "Advanced"
-        },
-        {
-            "path": "./topics/markdown/modules/basics",
-            "readme": "./topics/markdown/modules/basics/README.md",
-            "overview": "",
-            "name": "Basics"
-        },
-        {
-            "path": "./topics/markdown/modules/links_images",
-            "readme": "./topics/markdown/modules/links_images/README.md",
-            "overview": "This module explains how to integrate links and images into your Markdown files. Links and images make your Markdown more interactive and interesting, so it's really useful to learn how to use them.",
-            "name": "Links and Images"
-        },
-        {
-            "estTime": 10,
-            "path": "./topics/tracert/modules/introduction",
-            "readme": "./topics/tracert/modules/introduction/README.md",
-            "overview": "In computing, `traceroute` and `tracert` are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network.",
-            "name": "Introduction"
-        },
-        {
-            "path": "./topics/groovy/modules/variables",
-            "readme": "./topics/groovy/modules/variables/README.md",
-            "overview": "Variables are of course very commonly used, across all programming languages.",
-            "name": "Variables"
-        },
-        {
-            "path": "./topics/groovy/modules/closures",
-            "readme": "./topics/groovy/modules/closures/README.md",
-            "overview": "A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, a closure in the Groovy language can also contain free variables that are defined outside of its surrounding scope.",
-            "name": "Closures"
-        },
-        {
-            "path": "./topics/groovy/modules/syntax",
-            "readme": "./topics/groovy/modules/syntax/README.md",
-            "overview": "This document aims to cover the basics of the Groovy programming language's syntax.",
-            "name": "Syntax"
-        },
-        {
-            "path": "./topics/groovy/modules/functions",
-            "readme": "./topics/groovy/modules/functions/README.md",
-            "overview": "",
-            "name": "Functions"
-        },
-        {
-            "prereqs": [
-                "jenkins/web-setup",
-                "jenkins/jobs",
-                "jenkins/freestyle-project",
-                "linux/systemd",
-                "linux/sudo"
-            ],
-            "path": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd",
-            "readme": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd/README.md",
-            "overview": "Basic deployment of a Python Flask server, using systemd and a Freestyle Project.",
-            "name": "Basic Python Flask Freestyle Project Deployment with systemd"
-        },
-        {
-            "path": "./topics/jenkins/modules/freestyle-project",
-            "readme": "./topics/jenkins/modules/freestyle-project/README.md",
-            "overview": "Freestyle projects in Jenkins are a type of job you can create for almost any automated task.",
-            "name": "Freestyle Project"
-        },
-        {
-            "path": "./topics/jenkins/modules/jobs",
-            "readme": "./topics/jenkins/modules/jobs/README.md",
-            "overview": "A Jenkins project (job) is a repeatable build job, which contains steps and post-build actions.",
-            "name": "Jobs"
-        },
-        {
-            "path": "./topics/jenkins/modules/web-setup",
-            "readme": "./topics/jenkins/modules/web-setup/README.md",
-            "overview": "This document aims to guide you through the setup process of Jenkins, through the graphical (web) interface.",
-            "name": "Jenkins Setup from the Portal"
-        },
-        {
-            "estTime": 10,
-            "path": "./topics/traceroute/modules/introduction",
-            "readme": "./topics/traceroute/modules/introduction/README.md",
-            "overview": "In computing, `traceroute` and `tracert` are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network.",
-            "name": "Introduction"
-        },
-        {
-            "estTime": 10,
-            "path": "./topics/git/modules/cloning",
-            "readme": "./topics/git/modules/cloning/README.md",
-            "overview": "`git clone` allows the cloning of a repository to a newly created directory. Additionally, the command creates remote",
-            "name": "Cloning"
-        },
-        {
-            "path": "./topics/git/modules/pull-requests",
-            "readme": "./topics/git/modules/pull-requests/README.md",
-            "overview": "Pull requests let you tell others about changes you've pushed to a GitHub repository.  ",
-            "name": "Pull Requests"
-        },
-        {
-            "path": "./topics/git/modules/reverting",
-            "readme": "./topics/git/modules/reverting/README.md",
-            "overview": "",
-            "name": "Reverting"
-        },
-        {
-            "estTime": 10,
-            "path": "./topics/git/modules/forking",
-            "readme": "./topics/git/modules/forking/README.md",
-            "overview": "",
-            "name": "Forking"
-        },
-        {
-            "name": "Basics",
-            "est_time": 15,
-            "path": "./topics/git/modules/basics",
-            "readme": "./topics/git/modules/basics/README.md",
-            "overview": "Git is used for tracking changes in source code during software development."
-        },
-        {
-            "estTime": 30,
-            "path": "./topics/git/modules/merging",
-            "readme": "./topics/git/modules/merging/README.md",
-            "overview": "Joining the history of two or more branches through `git merge` incorporates changes into the current branch. This command is ",
-            "name": "Merging"
-        },
-        {
-            "path": "./topics/git/modules/branching",
-            "readme": "./topics/git/modules/branching/README.md",
-            "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
-            "name": "Branching"
-        },
-        {
-            "path": "./topics/nginx/modules/configuration",
-            "readme": "./topics/nginx/modules/configuration/README.md",
-            "overview": "NGINX uses a text-based configuration file written in a specific format.",
-            "name": "Configuration"
-        },
-        {
-            "path": "./topics/nginx/modules/introduction",
-            "readme": "./topics/nginx/modules/introduction/README.md",
-            "overview": "Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.",
-            "name": "Introduction"
-        },
-        {
-            "path": "./topics/nginx/modules/http-reverse-proxy-configuration",
-            "readme": "./topics/nginx/modules/http-reverse-proxy-configuration/README.md",
-            "overview": "An NGINX reverse proxy server sits in front of web servers and forwards client (e.g. web browser) requests to those web servers.",
-            "name": "HTTP Reverse Proxy Configuration"
-        },
-        {
-            "path": "./topics/nginx/modules/web-server-configuration",
-            "readme": "./topics/nginx/modules/web-server-configuration/README.md",
-            "overview": "NGINX can be configured as a web server to serve content such as HTML, CSS, JavaScript and Images.",
-            "name": "Web Server Configuration"
-        },
-        {
-            "path": "./topics/aws/modules/ec2",
-            "readme": "./topics/aws/modules/ec2/README.md",
-            "overview": "Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.",
-            "name": "Elastic Cloud Compute (EC2)"
-        },
-        {
-            "path": "./topics/aws/modules/vpc",
-            "readme": "./topics/aws/modules/vpc/README.md",
-            "overview": "Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
-            "name": "Virtual Private Cloud (VPC)"
-        },
-        {
-            "path": "./topics/cloud/modules/platform-as-a-service",
-            "readme": "./topics/cloud/modules/platform-as-a-service/README.md",
-            "overview": "",
-            "name": "Platform as a Service (PaaS)"
-        },
-        {
-            "path": "./topics/cloud/modules/cloud-concepts",
-            "readme": "./topics/cloud/modules/cloud-concepts/README.md",
-            "overview": "In this module you will learn about the concepts of cloud. These concepts are shared among all the cloud providers.",
-            "name": "Cloud Concepts"
-        },
-        {
-            "path": "./topics/cloud/modules/cloud-benefits",
-            "readme": "./topics/cloud/modules/cloud-benefits/README.md",
-            "overview": "In this module, you will learn about the benefits that are presented through cloud technologies.",
-            "name": "Cloud Benefits"
-        },
-        {
-            "path": "./topics/cloud/modules/cloud-enabling-technologies",
-            "readme": "./topics/cloud/modules/cloud-enabling-technologies/README.md",
-            "overview": "In this module you will learn what technologies allow cloud services to work.",
-            "name": "Cloud Enabling Technologies"
         },
         {
             "estTime": 15,
@@ -314,69 +121,83 @@
             "name": "Introduction"
         },
         {
-            "prereqs": [
-                "linux/nano",
-                "linux/vi"
-            ],
-            "path": "./topics/linux/modules/sudoers",
-            "readme": "./topics/linux/modules/sudoers/README.md",
-            "overview": "The sudo tool allows a user to act as a superuser for a command.",
-            "name": "Sudoers"
+            "path": "./topics/markdown/modules/basics",
+            "readme": "./topics/markdown/modules/basics/README.md",
+            "overview": "",
+            "name": "Basics"
         },
         {
-            "path": "./topics/linux/modules/managing-systemd-services",
-            "readme": "./topics/linux/modules/managing-systemd-services/README.md",
-            "overview": "A service, or daemon, is a background application that waits to be used, or carries out essential tasks, rather than being in direct control of an interactive user.",
-            "name": "Managing systemd Services"
+            "path": "./topics/markdown/modules/links_images",
+            "readme": "./topics/markdown/modules/links_images/README.md",
+            "overview": "This module explains how to integrate links and images into your Markdown files. Links and images make your Markdown more interactive and interesting, so it's really useful to learn how to use them.",
+            "name": "Links and Images"
         },
         {
-            "estTime": 15,
-            "questions": [
-                {
-                    "value": "What is the Netstat command used for?",
-                    "answer": "Displaying network connections for Transmission Control Protocol, routing tables, and a number of network interface and network protocol statistics",
-                    "choices": [
-                        "Provide information about the currently running processes, including their process identification numbers (PIDs)",
-                        "Allowing you to run programs with the security privileges of another user"
-                    ]
-                }
-            ],
-            "path": "./topics/netstat/modules/introduction",
-            "readme": "./topics/netstat/modules/introduction/README.md",
-            "overview": "In computing, netstat (network statistics) is a command-line network utility that displays network connections for Transmission Control Protocol (both incoming and outgoing), routing tables and network protocol statistics, and uses a number of network interfaces (network interface controller or software-defined network interface).",
+            "path": "./topics/markdown/modules/advanced",
+            "readme": "./topics/markdown/modules/advanced/README.md",
+            "overview": "This topic will go over some of the more advanced Markdown syntax and formatting. There's lots you can do with Markdown, so experiment beyond this brief introduction to it!",
+            "name": "Advanced"
+        },
+        {
+            "path": "./topics/aws/modules/vpc",
+            "readme": "./topics/aws/modules/vpc/README.md",
+            "overview": "Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
+            "name": "Virtual Private Cloud (VPC)"
+        },
+        {
+            "path": "./topics/aws/modules/ec2",
+            "readme": "./topics/aws/modules/ec2/README.md",
+            "overview": "Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.",
+            "name": "Elastic Cloud Compute (EC2)"
+        },
+        {
+            "path": "./topics/powershell/modules/navigation",
+            "readme": "./topics/powershell/modules/navigation/README.md",
+            "overview": "Knowing how to navigate a file system with PowerShell, Command Prompt or Bash is important for being able to automate tasks with their respective scripting languages.",
+            "name": "Navigation"
+        },
+        {
+            "path": "./topics/powershell/modules/conditional-statements",
+            "readme": "./topics/powershell/modules/conditional-statements/README.md",
+            "overview": "Conditional statements in PowerShell enable scripts to make decisions based on provided conditions.",
+            "name": "Conditional Statements"
+        },
+        {
+            "path": "./topics/powershell/modules/variables",
+            "readme": "./topics/powershell/modules/variables/README.md",
+            "overview": "Variables are a programming concept that has remained consistent across many different programming languages and PowerShell isn\u2019t an exception; a variable is like a container that holds information.",
+            "name": "Variables"
+        },
+        {
+            "path": "./topics/powershell/modules/functions",
+            "readme": "./topics/powershell/modules/functions/README.md",
+            "overview": "",
+            "name": "Functions"
+        },
+        {
+            "path": "./topics/powershell/modules/introduction",
+            "readme": "./topics/powershell/modules/introduction/README.md",
+            "overview": "PowerShell is a tool that allows us to manage machines from the command-line, as well as create scripts to automate tasks on Windows, Linux and MacOS operating systems.",
             "name": "Introduction"
-        },
-        {
-            "estTime": 15,
-            "software": [
-                {
-                    "name": "nginx",
-                    "version": "1.16.1",
-                    "platform": "windows"
-                }
-            ],
-            "path": "./topics/netstat/modules/basic-usage-for-windows",
-            "readme": "./topics/netstat/modules/basic-usage-for-windows/README.md",
-            "overview": "Netstat on Windows displays active TCP connections, ports on which the computer is listening, Ethernet statistics, the IP routing table, IPv4 statistics (for the IP, ICMP, TCP, and UDP protocols), and IPv6 statistics (for the IPv6, ICMPv6, TCP over IPv6, and UDP over IPv6 protocols).",
-            "name": "Basic Usage for Windows"
-        },
-        {
-            "path": "./topics/netstat/modules/basic-usage-for-linux",
-            "readme": "./topics/netstat/modules/basic-usage-for-linux/README.md",
-            "overview": "The netstat tool is very important for Linux network administrators, as well as system administrators, to monitor and troubleshoot their network related problems and determine network traffic performance.",
-            "name": "Basic Usage for Linux"
-        },
-        {
-            "path": "./topics/networking/modules/udp",
-            "readme": "./topics/networking/modules/udp/README.md",
-            "overview": "User Datagram Protocol (UDP) is connectionless and not as reliable a service as TCP. There is no acknowledgement of packet delivery, sequencing or even error recovery.",
-            "name": "UDP"
         },
         {
             "path": "./topics/networking/modules/tcp",
             "readme": "./topics/networking/modules/tcp/README.md",
             "overview": "Transmission Control Protocol (TCP) is connection-orientated.",
             "name": "TCP"
+        },
+        {
+            "estTime": 10,
+            "path": "./topics/networking/modules/standards-and-organisations",
+            "readme": "./topics/networking/modules/standards-and-organisations/README.md",
+            "overview": "The internet, as a collection of worldwide networks, requires policies, procedures, standards and protocols to make it work.",
+            "name": "Standards and Organisations"
+        },
+        {
+            "path": "./topics/networking/modules/frames",
+            "readme": "./topics/networking/modules/frames/README.md",
+            "overview": "",
+            "name": "Frames"
         },
         {
             "estTime": 30,
@@ -408,17 +229,156 @@
             "name": "Models"
         },
         {
-            "path": "./topics/networking/modules/frames",
-            "readme": "./topics/networking/modules/frames/README.md",
-            "overview": "",
-            "name": "Frames"
+            "path": "./topics/networking/modules/udp",
+            "readme": "./topics/networking/modules/udp/README.md",
+            "overview": "User Datagram Protocol (UDP) is connectionless and not as reliable a service as TCP. There is no acknowledgement of packet delivery, sequencing or even error recovery.",
+            "name": "UDP"
         },
         {
             "estTime": 10,
-            "path": "./topics/networking/modules/standards-and-organisations",
-            "readme": "./topics/networking/modules/standards-and-organisations/README.md",
-            "overview": "The internet, as a collection of worldwide networks, requires policies, procedures, standards and protocols to make it work.",
-            "name": "Standards and Organisations"
+            "path": "./topics/tracert/modules/introduction",
+            "readme": "./topics/tracert/modules/introduction/README.md",
+            "overview": "In computing, `traceroute` and `tracert` are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network.",
+            "name": "Introduction"
+        },
+        {
+            "path": "./topics/groovy/modules/closures",
+            "readme": "./topics/groovy/modules/closures/README.md",
+            "overview": "A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, a closure in the Groovy language can also contain free variables that are defined outside of its surrounding scope.",
+            "name": "Closures"
+        },
+        {
+            "path": "./topics/groovy/modules/variables",
+            "readme": "./topics/groovy/modules/variables/README.md",
+            "overview": "Variables are of course very commonly used, across all programming languages.",
+            "name": "Variables"
+        },
+        {
+            "path": "./topics/groovy/modules/functions",
+            "readme": "./topics/groovy/modules/functions/README.md",
+            "overview": "",
+            "name": "Functions"
+        },
+        {
+            "path": "./topics/groovy/modules/syntax",
+            "readme": "./topics/groovy/modules/syntax/README.md",
+            "overview": "This document aims to cover the basics of the Groovy programming language's syntax.",
+            "name": "Syntax"
+        },
+        {
+            "path": "./topics/jenkins/modules/freestyle-project",
+            "readme": "./topics/jenkins/modules/freestyle-project/README.md",
+            "overview": "Freestyle projects in Jenkins are a type of job you can create for almost any automated task.",
+            "name": "Freestyle Project"
+        },
+        {
+            "prereqs": [
+                "jenkins/web-setup",
+                "jenkins/jobs",
+                "jenkins/freestyle-project",
+                "linux/systemd",
+                "linux/sudo"
+            ],
+            "path": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd",
+            "readme": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd/README.md",
+            "overview": "Basic deployment of a Python Flask server, using systemd and a Freestyle Project.",
+            "name": "Basic Python Flask Freestyle Project Deployment with systemd"
+        },
+        {
+            "path": "./topics/jenkins/modules/jobs",
+            "readme": "./topics/jenkins/modules/jobs/README.md",
+            "overview": "A Jenkins project (job) is a repeatable build job, which contains steps and post-build actions.",
+            "name": "Jobs"
+        },
+        {
+            "path": "./topics/jenkins/modules/web-setup",
+            "readme": "./topics/jenkins/modules/web-setup/README.md",
+            "overview": "This document aims to guide you through the setup process of Jenkins, through the graphical (web) interface.",
+            "name": "Jenkins Setup from the Portal"
+        },
+        {
+            "path": "./topics/nginx/modules/web-server-configuration",
+            "readme": "./topics/nginx/modules/web-server-configuration/README.md",
+            "overview": "NGINX can be configured as a web server to serve content such as HTML, CSS, JavaScript and Images.",
+            "name": "Web Server Configuration"
+        },
+        {
+            "path": "./topics/nginx/modules/http-reverse-proxy-configuration",
+            "readme": "./topics/nginx/modules/http-reverse-proxy-configuration/README.md",
+            "overview": "An NGINX reverse proxy server sits in front of web servers and forwards client (e.g. web browser) requests to those web servers.",
+            "name": "HTTP Reverse Proxy Configuration"
+        },
+        {
+            "path": "./topics/nginx/modules/introduction",
+            "readme": "./topics/nginx/modules/introduction/README.md",
+            "overview": "Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.",
+            "name": "Introduction"
+        },
+        {
+            "path": "./topics/nginx/modules/configuration",
+            "readme": "./topics/nginx/modules/configuration/README.md",
+            "overview": "NGINX uses a text-based configuration file written in a specific format.",
+            "name": "Configuration"
+        },
+        {
+            "prereqs": [
+                "linux/nano",
+                "linux/vi"
+            ],
+            "path": "./topics/linux/modules/sudoers",
+            "readme": "./topics/linux/modules/sudoers/README.md",
+            "overview": "The sudo tool allows a user to act as a superuser for a command.",
+            "name": "Sudoers"
+        },
+        {
+            "path": "./topics/linux/modules/managing-systemd-services",
+            "readme": "./topics/linux/modules/managing-systemd-services/README.md",
+            "overview": "A service, or daemon, is a background application that waits to be used, or carries out essential tasks, rather than being in direct control of an interactive user.",
+            "name": "Managing systemd Services"
+        },
+        {
+            "path": "./topics/netstat/modules/basic-usage-for-linux",
+            "readme": "./topics/netstat/modules/basic-usage-for-linux/README.md",
+            "overview": "The netstat tool is very important for Linux network administrators, as well as system administrators, to monitor and troubleshoot their network related problems and determine network traffic performance.",
+            "name": "Basic Usage for Linux"
+        },
+        {
+            "estTime": 15,
+            "software": [
+                {
+                    "name": "nginx",
+                    "version": "1.16.1",
+                    "platform": "windows"
+                }
+            ],
+            "path": "./topics/netstat/modules/basic-usage-for-windows",
+            "readme": "./topics/netstat/modules/basic-usage-for-windows/README.md",
+            "overview": "Netstat on Windows displays active TCP connections, ports on which the computer is listening, Ethernet statistics, the IP routing table, IPv4 statistics (for the IP, ICMP, TCP, and UDP protocols), and IPv6 statistics (for the IPv6, ICMPv6, TCP over IPv6, and UDP over IPv6 protocols).",
+            "name": "Basic Usage for Windows"
+        },
+        {
+            "estTime": 15,
+            "questions": [
+                {
+                    "value": "What is the Netstat command used for?",
+                    "answer": "Displaying network connections for Transmission Control Protocol, routing tables, and a number of network interface and network protocol statistics",
+                    "choices": [
+                        "Provide information about the currently running processes, including their process identification numbers (PIDs)",
+                        "Allowing you to run programs with the security privileges of another user"
+                    ]
+                }
+            ],
+            "path": "./topics/netstat/modules/introduction",
+            "readme": "./topics/netstat/modules/introduction/README.md",
+            "overview": "In computing, netstat (network statistics) is a command-line network utility that displays network connections for Transmission Control Protocol (both incoming and outgoing), routing tables and network protocol statistics, and uses a number of network interfaces (network interface controller or software-defined network interface).",
+            "name": "Introduction"
+        },
+        {
+            "estTime": 10,
+            "path": "./topics/traceroute/modules/introduction",
+            "readme": "./topics/traceroute/modules/introduction/README.md",
+            "overview": "In computing, `traceroute` and `tracert` are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network.",
+            "name": "Introduction"
         },
         {
             "estTime": 10,
@@ -438,34 +398,74 @@
             "name": "Port Scanning with netcat"
         },
         {
-            "path": "./topics/powershell/modules/introduction",
-            "readme": "./topics/powershell/modules/introduction/README.md",
-            "overview": "PowerShell is a tool that allows us to manage machines from the command-line, as well as create scripts to automate tasks on Windows, Linux and MacOS operating systems.",
-            "name": "Introduction"
+            "path": "./topics/git/modules/branching",
+            "readme": "./topics/git/modules/branching/README.md",
+            "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
+            "name": "Branching"
         },
         {
-            "path": "./topics/powershell/modules/variables",
-            "readme": "./topics/powershell/modules/variables/README.md",
-            "overview": "Variables are a programming concept that has remained consistent across many different programming languages and PowerShell isn\u2019t an exception; a variable is like a container that holds information.",
-            "name": "Variables"
+            "name": "Basics",
+            "est_time": 15,
+            "path": "./topics/git/modules/basics",
+            "readme": "./topics/git/modules/basics/README.md",
+            "overview": "Git is used for tracking changes in source code during software development."
         },
         {
-            "path": "./topics/powershell/modules/conditional-statements",
-            "readme": "./topics/powershell/modules/conditional-statements/README.md",
-            "overview": "Conditional statements in PowerShell enable scripts to make decisions based on provided conditions.",
-            "name": "Conditional Statements"
+            "estTime": 10,
+            "path": "./topics/git/modules/cloning",
+            "readme": "./topics/git/modules/cloning/README.md",
+            "overview": "`git clone` allows the cloning of a repository to a newly created directory. Additionally, the command creates remote",
+            "name": "Cloning"
         },
         {
-            "path": "./topics/powershell/modules/navigation",
-            "readme": "./topics/powershell/modules/navigation/README.md",
-            "overview": "Knowing how to navigate a file system with PowerShell, Command Prompt or Bash is important for being able to automate tasks with their respective scripting languages.",
-            "name": "Navigation"
-        },
-        {
-            "path": "./topics/powershell/modules/functions",
-            "readme": "./topics/powershell/modules/functions/README.md",
+            "path": "./topics/git/modules/reverting",
+            "readme": "./topics/git/modules/reverting/README.md",
             "overview": "",
-            "name": "Functions"
+            "name": "Reverting"
+        },
+        {
+            "path": "./topics/git/modules/pull-requests",
+            "readme": "./topics/git/modules/pull-requests/README.md",
+            "overview": "Pull requests let you tell others about changes you've pushed to a GitHub repository.  ",
+            "name": "Pull Requests"
+        },
+        {
+            "estTime": 10,
+            "path": "./topics/git/modules/forking",
+            "readme": "./topics/git/modules/forking/README.md",
+            "overview": "",
+            "name": "Forking"
+        },
+        {
+            "estTime": 30,
+            "path": "./topics/git/modules/merging",
+            "readme": "./topics/git/modules/merging/README.md",
+            "overview": "Joining the history of two or more branches through `git merge` incorporates changes into the current branch. This command is ",
+            "name": "Merging"
+        },
+        {
+            "path": "./topics/cloud/modules/cloud-benefits",
+            "readme": "./topics/cloud/modules/cloud-benefits/README.md",
+            "overview": "In this module, you will learn about the benefits that are presented through cloud technologies.",
+            "name": "Cloud Benefits"
+        },
+        {
+            "path": "./topics/cloud/modules/cloud-concepts",
+            "readme": "./topics/cloud/modules/cloud-concepts/README.md",
+            "overview": "In this module you will learn about the concepts of cloud. These concepts are shared among all the cloud providers.",
+            "name": "Cloud Concepts"
+        },
+        {
+            "path": "./topics/cloud/modules/cloud-enabling-technologies",
+            "readme": "./topics/cloud/modules/cloud-enabling-technologies/README.md",
+            "overview": "In this module you will learn what technologies allow cloud services to work.",
+            "name": "Cloud Enabling Technologies"
+        },
+        {
+            "path": "./topics/cloud/modules/platform-as-a-service",
+            "readme": "./topics/cloud/modules/platform-as-a-service/README.md",
+            "overview": "",
+            "name": "Platform as a Service (PaaS)"
         }
     ],
     "courses": [

@@ -2,7 +2,7 @@
 
 <!--TOC_START-->
 ## Contents
-	- [Overview](#overview)
+- [Overview](#overview)
 	- [Security](#security)
 	- [Pros](#pros)
 	- [Cons](#cons)

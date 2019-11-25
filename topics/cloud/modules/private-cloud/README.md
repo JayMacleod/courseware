@@ -1,5 +1,15 @@
 # Private cloud
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+	- [Security](#security)
+	- [Pros](#pros)
+	- [Cons](#cons)
+	- [Best for](#best-for)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 **Private cloud** is defined as computing services available to selected users only and accessible over the internet or internal network.

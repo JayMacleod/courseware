@@ -20,4 +20,5 @@ Three of the biggest cloud vendors in the tech industry today are:
 - [Cloud Benefits](./modules/cloud-benefits)
 - [Cloud Concepts](./modules/cloud-concepts)
 - [Cloud Enabling Technologies](./modules/cloud-enabling-technologies)
+- [Public cloud](./modules/public-cloud)
 <!--MODULES_END-->

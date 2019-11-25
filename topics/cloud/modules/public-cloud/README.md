@@ -1,5 +1,15 @@
 # Public cloud
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+	- [Security](#security)
+	- [Pros](#pros)
+	- [Cons](#cons)
+	- [Best for](#best-for)
+	- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 **Public cloud** is defined as computing services available to *anyone* that want's to purchase or use them *over the internet* provided by a third party.

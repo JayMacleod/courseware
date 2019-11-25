@@ -16,7 +16,7 @@
 
 The way of being charged may vary depending on what resources are being used, some resources may be free, others may charge by CPU cycles, storage or bandwidth. 
 
-Different from *Private cloud* using *Public cloud* may save companies money as there is no upfront capital expenditure for things like:
+Different from *Private cloud* and *Public cloud* is that the later may save companies money as there is no upfront capital expenditure for things like:
 - premises
 - hardware
 - software

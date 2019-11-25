@@ -63,7 +63,7 @@ Try answering the following questions:
 
 <details>
 
-<summary><b>To whom are the *Public cloud* services available?</b></summary>
+<summary><b>To whom are the <i>Public cloud</i> services available?</b></summary>
 
 As the name suggests, the service is available to everyone
 
@@ -71,7 +71,7 @@ As the name suggests, the service is available to everyone
 
 <details>
 
-<summary><b>Try to list two Pros and two cons about *Public cloud*</b></summary>
+<summary><b>Try to list two Pros and two cons about <i>Public cloud</i></b></summary>
 
 Check if you got any of the following Pros:
 - no up-front capital expenditure

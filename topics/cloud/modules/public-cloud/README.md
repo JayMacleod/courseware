@@ -10,7 +10,7 @@
 - [Tasks](#tasks)
 
 <!--TOC_END-->
-### Overview
+## Overview
 
 **Public cloud** is defined as computing services available to *anyone* that want's to purchase or use them *over the internet* provided by a third party.
 

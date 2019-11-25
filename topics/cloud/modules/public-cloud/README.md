@@ -2,12 +2,12 @@
 
 <!--TOC_START-->
 ## Contents
-- [Overview](#overview)
+	- [Overview](#overview)
 	- [Security](#security)
 	- [Pros](#pros)
 	- [Cons](#cons)
 	- [Best for](#best-for)
-	- [Tasks](#tasks)
+- [Tasks](#tasks)
 
 <!--TOC_END-->
 ### Overview

@@ -55,7 +55,7 @@ Try answering the following questions:
 
 <details>
 
-<summary><b>To whom is <i>Private cloud</i> available></b></summary>
+<summary><b>To whom is <i>Private cloud</i> available</b></summary>
 
 Selected users
 

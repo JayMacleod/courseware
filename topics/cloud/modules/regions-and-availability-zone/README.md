@@ -1,5 +1,13 @@
 # Regions and Availability zones
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+	- [Availability zones](#availability-zones)
+	- [Regions](#regions)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 *Availability zones* are tightly coupled (related) to *Regions*, hence this module will cover them both alongside each other.
@@ -22,11 +30,8 @@ An additional benefit of *AZ* is that it has good low latency replication next t
 
 In order to maximise resiliency, each *region* has multiple *AZ*, the number depends on the cloud provider.
 
-
 ------------------------------------------------------------------------------------------------------------------------
 **INSERT IMAGE HERE*
 ------------------------------------------------------------------------------------------------------------------------
 
-
 ## Tasks
-

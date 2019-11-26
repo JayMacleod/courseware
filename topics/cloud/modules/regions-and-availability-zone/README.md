@@ -45,7 +45,7 @@ In a scenario where you have half of your user base in one *region*, and another
 Additionally scaling could be set up for each region separately so that it could react to the demands in traffic for each of the regions.
 
 ------------------------------------------------------------------------------------------------------------------------
-**INSERT IMAGE HERE*
+**INSERT IMAGE HERE**
 ------------------------------------------------------------------------------------------------------------------------
 
 ## Tasks

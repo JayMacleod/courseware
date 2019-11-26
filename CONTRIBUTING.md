@@ -27,13 +27,13 @@ Anyone is welcome to collaborate on this project, but please adhere to the conve
 All courseware on this project is in small and digestable modules.
 These modules are then organised into topics.
 Moving forward, we will be introducing courses and pathways into the project.
-- Topics
+- **Topics**
     - This is a subject, which could be a programming language or tool. For example, Java, Jenkins, Kubernetes and Google Cloud Platform would all be considered subjects.
-- Modules
+- **Modules**
     - Modules are the topics broken down into much smaller, digestible content and tasks.
-- Courses
+- **Courses**
     - A course is a carefully ordered set of modules, from any topics, that are relevant for the course outcome.
-- Pathways
+- **Pathways**
     - Pathways are courses that have been put in order.
 ## Naming Conventions
 Files, folders and packages should be in lowercase with exceptions to the `README.md` file.
@@ -86,19 +86,26 @@ To alleviate this, tasks can include quizzes, Google Form questionnaires and lin
 Quizzes can be made by using hidden drop downs for the answers.
 
 ## Review Process
-Modules will go through 2 sets of reviewing before being released into the main branch.
+Modules will go through 2 sets of reviewing before being released into the *master* branch.
 
 The first review is for technical and implementation purposes, therefore they would be reviewed ideally by someone with some knowledge in the area:
-- Are the tasks clear and solvable?
+- Are the tasks clear and solvable? (attempt the task)
 - Are the statements and explained concepts correct throughout the module?
 - Does it serve its purpose well, as a piece of material for learning?
 - Does it make sense grammatically, are there any spelling errors etc.
+- Is the formatting correct
+    - Are the required headers there and used correctly
+    - Are each sentence on a separate line
+- Is the module not too big or expands beyond what should be covered
+- Is the *pull request* without *merge conflicts*
+- Is the *pull request* labeled with the correct **release label**
 
 The second set of reviewing is more for grammatical purposes and general look of the material:
 - Any spelling mistakes.
 - Grammatical improvements to ensure content is readable and makes sense.
 - Formatting improvements to improve readability - this could be things like heading sizes and line breaks.
 - Are acronyms expanded to avoid confusion?
+- 
 
 ## Weekly Process
 A weekly process is being formed internally for this project to allow modules to be implemented on a weekly basis.

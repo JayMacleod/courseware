@@ -16,9 +16,17 @@ One or more data centres make up one *AZ* and has it's own independent power sup
 
 Each cloud provider will be guaranteeing a certain up-time of their VMs, in most cases reaching 99.99% or close to it, which will be described in the **S**ervice **L**ayer **A**greement (**SLA**)
 
+An additional benefit of *AZ* is that it has good low latency replication next to high availability, which allows you to make sure the mission-critical applications are running without issues.
+
 ### Regions
 
 In order to maximise resiliency, each *region* has multiple *AZ*, the number depends on the cloud provider.
+
+
+------------------------------------------------------------------------------------------------------------------------
+**INSERT IMAGE HERE*
+------------------------------------------------------------------------------------------------------------------------
+
 
 ## Tasks
 

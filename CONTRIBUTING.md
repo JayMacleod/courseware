@@ -105,7 +105,6 @@ The second set of reviewing is more for grammatical purposes and general look of
 - Grammatical improvements to ensure content is readable and makes sense.
 - Formatting improvements to improve readability - this could be things like heading sizes and line breaks.
 - Are acronyms expanded to avoid confusion?
-- 
 
 ## Weekly Process
 A weekly process is being formed internally for this project to allow modules to be implemented on a weekly basis.

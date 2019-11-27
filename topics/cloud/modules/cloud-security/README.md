@@ -86,18 +86,6 @@ That is why businesses are cautious of moving their systems to the cloud, but th
 
 ## Tasks
 
+Task for this module is a research task.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Investigate what are the most common security issues with: *Public*, *Private*, *Hybrid cloud***

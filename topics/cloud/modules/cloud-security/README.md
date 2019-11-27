@@ -5,6 +5,9 @@
 - [Overview](#overview)
 - [Why is cloud security important?](#why-is-cloud-security-important)
 	- [Centralised security](#centralised-security)
+	- [Cost effectiveness](#cost-effectiveness)
+	- [Reduced administration](#reduced-administration)
+	- [Reliability](#reliability)
 - [Tasks](#tasks)
 
 <!--TOC_END-->

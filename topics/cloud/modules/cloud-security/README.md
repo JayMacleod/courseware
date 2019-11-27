@@ -3,6 +3,8 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Why is cloud security important?](#why-is-cloud-security-important)
+	- [Centralised security](#centralised-security)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
@@ -47,7 +49,6 @@ On premises network would have numerous devices and endpoints, that still is the
 The bigger difference comes from it all being in one place, it becomes easier to analyse traffic and filtering, additionally monitoring of networking and policy updates becomes a more streamlined process.
 
 A big benefit is that you can configure your services for disaster recovery as everything is in one place.
-
 
 
 ## Tasks

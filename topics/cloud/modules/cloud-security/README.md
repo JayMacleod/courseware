@@ -5,6 +5,9 @@
 - [Overview](#overview)
 - [Why is cloud security important?](#why-is-cloud-security-important)
 	- [Centralised security](#centralised-security)
+	- [Cost effectiveness](#cost-effectiveness)
+	- [Reduced administration](#reduced-administration)
+	- [Reliability](#reliability)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
@@ -85,19 +88,3 @@ It doesn't matter whether you're using public, private, hybrid cloud models, the
 That is why businesses are cautious of moving their systems to the cloud, but the same threats can happen on on-premises infrastructure, hence everything boils down to how the security is implemented and managed.
 
 ## Tasks
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

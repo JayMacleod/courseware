@@ -50,5 +50,54 @@ The bigger difference comes from it all being in one place, it becomes easier to
 
 A big benefit is that you can configure your services for disaster recovery as everything is in one place.
 
+### Cost effectiveness
+
+A big benefit of using cloud storage and security services is that there is no need to spend up-front cost for hardware.
+
+This reduces capital expense at the same time reducing administrative overhead.
+
+IT teams used to fight fight with security issues reactively (once they appear), where in the cloud it's more about proactive security (before they appear) that is running 24/7 without any need for human intervention.
+
+### Reduced administration
+
+Once your services are with a reputable cloud provider, there will be no more manual security configurations or constant security updates.
+
+These tasks are not only massive time drain but also adds a bit load on resources.
+
+This is taken away once you move to the cloud as all of the security is defined and controlled in one place.
+
+### Reliability
+
+It wouldn't be an understatement to say that cloud services provide the best dependability out there.
+
+The only caveat being that the right security measure need to be in place and configured correctly.
+
+Once that step is done, users can then safely have access to their data and application in the cloud.
+
+The trend of moving to the cloud is there for a reason, what businesses are noticing is that moving their services to the cloud gives them many benefits.
+
+These benefits include things like: *scaling*, *reduced costs*, *using agile systems*.
+
+One thing businesses need to ensure is that they have complete confidence in the security that they implemented and that the systems are secure of threats like: *data theft*, *leakage*, *deletion* and *corruption*.
+
+It doesn't matter whether you're using public, private, hybrid cloud models, they are all susceptible to IT threads is mishandled.
+
+That is why businesses are cautious of moving their systems to the cloud, but the same threats can happen on on-premises infrastructure, hence everything boils down to how the security is implemented and managed.
 
 ## Tasks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

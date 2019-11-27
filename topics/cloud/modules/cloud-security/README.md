@@ -1,5 +1,11 @@
 # Cloud security
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 **Cloud security** sometimes referred as **Cloud computing security** is made up of *sets of policies*, *controls*, *procedures* and *technologies* that all work together for the purpose of protecting cloud based systems, infrastructure and data.
@@ -18,6 +24,4 @@ How the cloud security is delivered depends from what is the solution and which 
 
 Additionally it's not a sole responsibility of the business to implement it, but a joint effort with the cloud provider involved. 
 
-
 ## Tasks
-
